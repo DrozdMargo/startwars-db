@@ -5,9 +5,7 @@ import { withRouter } from 'react-router-dom';
 const PlanetsPage = ({history}) => {
  
     return (
-      <PlanetList onItemSelected={(itemId) => {
-        return history.push(`/planets/${itemId}`);
-      }} />
+      <PlanetList onItemSelected={(itemId) => history.push(itemId)} />
     );
 };
 
